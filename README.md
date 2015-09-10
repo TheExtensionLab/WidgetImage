@@ -5,7 +5,7 @@ This extension is often a dependency of our other extensions.
 
 Example Use
 -----------
-In your modules widget.xml file simply add the helper block below to the feild you want to be a image selector.
+In your modules widget.xml file simply add the helper block below to the field you want to be an image selector.
 
 ```
   <featured_image>
