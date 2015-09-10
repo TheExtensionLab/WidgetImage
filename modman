@@ -1,0 +1,4 @@
+app/code/community/TheExtensionLab/WidgetImage  app/code/community/TheExtensionLab/WidgetImage
+app/etc/modules/TheExtensionLab_WidgetImage.xml app/etc/modules/TheExtensionLab_WidgetImage.xml
+app/design/adminhtml/default/default/layout/theextensionlab/widgetimage.xml app/design/adminhtml/default/default/layout/theextensionlab/widgetimage.xml
+js/theextensionlab/widgetimage/wysiwyg/widget.js    js/theextensionlab/widgetimage/wysiwyg/widget.js

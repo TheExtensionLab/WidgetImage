@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <TheExtensionLab_WidgetImage>
+            <version>0.1.0</version>
+        </TheExtensionLab_WidgetImage>
+    </modules>
+
+    <global>
+        <blocks>
+            <theextensionlab_widgetimage>
+                <class>TheExtensionLab_WidgetImage_Block</class>
+            </theextensionlab_widgetimage>
+        </blocks>
+
+        <helpers>
+            <theextensionlab_widgetimage>
+                <class>TheExtensionLab_WidgetImage_Helper</class>
+            </theextensionlab_widgetimage>
+        </helpers>
+    </global>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <theextensionlab_widgetimage before="Mage_Adminhtml">TheExtensionLab_WidgetImage_Adminhtml</theextensionlab_widgetimage>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <theextensionlab_widgetimage>
+                    <file>theextensionlab/widgetimage.xml</file>
+                </theextensionlab_widgetimage>
+            </updates>
+        </layout>
+    </adminhtml>
+
+</config>

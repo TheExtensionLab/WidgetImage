@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!--
+* @category    TheExtensionLab
+* @package     TheExtensionLab_WidgetImage
+* @copyright   Copyright (c) 2015 TheExtensionLab (http://www.theextensionlab.com)
+* @license     Open Software License (OSL 3.0)
+* @author      James Anelay @ TheExtensionLab <james@theextensionlab.com>
+-->
+<layout>
+    <adminhtml_widget_images_index>
+        <remove name="footer" />
+        <remove name="head" />
+        <reference name="left">
+            <block name="wysiwyg_images.js" type="adminhtml/cms_wysiwyg_images_content" template="cms/browser/js.phtml" />
+            <block name="wysiwyg_images.tree" type="adminhtml/cms_wysiwyg_images_tree" template="cms/browser/tree.phtml" />
+        </reference>
+        <reference name="content">
+            <block name="wysiwyg_images.content"  type="theextensionlab_widgetimage/adminhtml_widget_images_content" template="cms/browser/content.phtml">
+                <block name="wysiwyg_images.uploader" type="adminhtml/cms_wysiwyg_images_content_uploader" template="cms/browser/content/uploader.phtml" />
+                <block name="wysiwyg_images.newfolder" type="adminhtml/cms_wysiwyg_images_content_newfolder" template="cms/browser/content/newfolder.phtml" />
+            </block>
+        </reference>
+    </adminhtml_widget_images_index>
+
+    <adminhtml_widget_images_contents>
+        <block name="wysiwyg_images.files" type="adminhtml/cms_wysiwyg_images_content_files" template="cms/browser/content/files.phtml" output="toHtml" />
+    </adminhtml_widget_images_contents>
+
+    <widget_image_override>
+        <reference name="head">
+            <action method="addJs"><script>theextensionlab/widgetimage/wysiwyg/widget.js</script></action>
+        </reference>
+    </widget_image_override>
+
+    <editor>
+        <update handle="widget_image_override"/>
+    </editor>
+
+    <adminhtml_widget_instance_edit>
+        <update handle="widget_image_override"/>
+    </adminhtml_widget_instance_edit>
+
+    <adminhtml_mobile_edittemplate>
+        <update handle="widget_image_override"/>
+    </adminhtml_mobile_edittemplate>
+
+</layout>
