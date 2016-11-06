@@ -28,6 +28,10 @@
 
     <widget_image_override>
         <reference name="head">
+            <action method="addJs"><script>lib/flex.js</script></action>
+            <action method="addJs"><script>lib/FABridge.js</script></action>
+            <action method="addJs"><script>mage/adminhtml/flexuploader.js</script></action>
+            <action method="addJs"><script>mage/adminhtml/browser.js</script></action>
             <action method="addJs"><script>theextensionlab/widgetimage/wysiwyg/widget.js</script></action>
         </reference>
     </widget_image_override>
